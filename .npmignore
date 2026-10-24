@@ -1,0 +1,5 @@
+﻿*.log
+.shots/
+perf.flag
+perf.log
+*.png

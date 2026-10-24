@@ -1,0 +1,78 @@
+﻿{
+    "name":  "dsh-screenshot-native",
+    "version":  "1.0.0",
+    "description":  "微信式截图（原生全屏浮层）：打开即隐藏 Harness 窗口、悬停选窗单击截整窗、Shift 切换保留/隐藏、截图直接进输入框；Windows 专用，预编译引擎，无运行时依赖",
+    "type":  "module",
+    "main":  "lib/index.js",
+    "license":  "MIT",
+    "author":  "baiyinshiyuan (upstream); fork maintained by zhangzeyufr-commits",
+    "os":  [
+               "win32"
+           ],
+    "engines":  {
+                    "node":  "\u003e=20",
+                    "dsh":  "\u003e=0.2.0-rc.1"
+                },
+    "keywords":  [
+                     "dsh",
+                     "dsh-plugin",
+                     "deepseek-harness",
+                     "screenshot",
+                     "snipping",
+                     "windows"
+                 ],
+    "exports":  {
+                    ".":  {
+                              "default":  "./lib/index.js"
+                          },
+                    "./client":  {
+                                     "default":  "./lib/client.js"
+                                 },
+                    "./package.json":  "./package.json"
+                },
+    "files":  [
+                  "bin",
+                  "lib",
+                  "scripts",
+                  "cordis.patch.yml",
+                  "README.md",
+                  "LICENSE",
+                  "!bin/*.log",
+                  "!bin/.shots"
+              ],
+    "publishConfig":  {
+                          "access":  "public"
+                      },
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           },
+                "client":  {
+                               "platform":  "web",
+                               "inject":  [
+                                              "@deepseek-ai/dsh-client-ui-slots",
+                                              "@deepseek-ai/dsh-client-ui-conversation"
+                                          ]
+                           },
+                "compatibility":  {
+                                      "node":  "\u003e=20",
+                                      "dsh":  "\u003e=0.2.0-rc.1"
+                                  }
+            },
+    "dependencies":  {
+
+                     },
+    "peerDependencies":  {
+                             "@deepseek-ai/dsh-client-ui-conversation":  "\u003e=0.2.0-rc.1",
+                             "@deepseek-ai/dsh-client-ui-slots":  "\u003e=0.2.0-rc.1",
+                             "@deepseek-ai/dsh-tools":  "\u003e=0.2.0-rc.1"
+                         },
+    "repository":  {
+                       "type":  "git",
+                       "url":  "https://github.com/zhangzeyufr-commits/dsh-screenshot-native.git"
+                   },
+    "bugs":  {
+                 "url":  "https://github.com/zhangzeyufr-commits/dsh-screenshot-native/issues"
+             },
+    "homepage":  "https://github.com/zhangzeyufr-commits/dsh-screenshot-native#readme"
+}

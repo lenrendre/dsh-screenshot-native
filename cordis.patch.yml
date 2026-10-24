@@ -1,0 +1,14 @@
+# dsh-screenshot-native bundle patch
+#
+# 挂载宿主半身（一条 HTTP 路由 + 三个模型工具）。
+# 浏览器半身由 package.json 的 dsh.client 声明，绑定在 name 为包名的这一行上。
+# ⚠️ name 必须与 package.json 的包名完全一致，DSH loader 靠它解析包。
+#
+# 这里刻意不再写上面那套上游配置：defaultAction / snapThreshold / ignoreWindowPatterns /
+# longShot* 的读取点已经随死路由一起删掉，留着只会让人以为它们还生效。
+# 唯一仍然有效的可选项是 shellPath（指定 PowerShell 解释器），需要时再打开：
+#   config:
+#     shellPath: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe'
+- insert:
+    - id: dsh-screenshot-native
+      name: dsh-screenshot-native
