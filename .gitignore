@@ -1,7 +1,8 @@
-﻿*.log
+*.log
 .shots/
 perf.flag
 perf.log
 _smoke.png
 _final.png
 verify.png
+*.tgz
