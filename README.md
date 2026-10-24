@@ -9,7 +9,7 @@ Windows 专用。原生 C# 全屏浮层（不是网页遮罩），所以能截�
 ## 安装
 
 ```powershell
-dsh plugin --profile desktop add github:lenrendre/dsh-screenshot-native#v1.0.0
+dsh plugin --profile desktop add github:lenrendre/dsh-screenshot-native#v1.0.1
 ```
 
 装完重启 DSH，输入框左侧出现相机按钮。
