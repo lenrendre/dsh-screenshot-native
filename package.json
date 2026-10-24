@@ -1,6 +1,6 @@
 {
     "name":  "dsh-screenshot-native",
-    "version":  "1.0.1",
+    "version":  "1.0.0",
     "description":  "微信式截图（原生全屏浮层）：打开即隐藏 Harness 窗口、悬停选窗单击截整窗、Shift 切换保留/隐藏、截图直接进输入框；Windows 专用，预编译引擎，无运行时依赖",
     "type":  "module",
     "main":  "lib/index.js",
