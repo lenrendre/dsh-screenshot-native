@@ -4,7 +4,11 @@
 
 Windows 专用。原生 C# 全屏浮层（不是网页遮罩），所以能截到 DSH 之外的任何窗口；引擎是预编译的 `bin/WeChatShot.exe`，无运行时依赖。
 
-> fork 自 [Durandalw/dsh-plugin-screenshot](https://github.com/Durandalw/dsh-plugin-screenshot)（MIT，作者 baiyinshiyuan），本仓库维护 fork 版本。
+兼容性：DSH ≥ `0.2.0-rc.1`（见 `package.json` 的 `dsh.compatibility`）；运行时零依赖，不需要 Node 或 Python。
+
+> fork 自 [Durandalw/dsh-plugin-screenshot](https://github.com/Durandalw/dsh-plugin-screenshot)（MIT，作者 baiyinshiyuan）。
+> ⚠️ **不要与原版同时安装**：两者注册同源路由与按钮，会重复。
+> 给 AI 的入口：[AGENTS.md](AGENTS.md)。
 
 ## 安装
 
